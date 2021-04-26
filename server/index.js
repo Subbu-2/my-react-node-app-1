@@ -8,7 +8,7 @@ const app = express();
 app.use(express.static(path.resolve(__dirname,'../client/build')));
 
 app.get("/api", (req, res) => {
-    res.json({ message: "Hello from server!" });
+    res.json({ message: "Hello from git to server to heroku :)" });
   });
 
 app.get("*", (req, res) => {
